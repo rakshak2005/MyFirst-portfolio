@@ -6,56 +6,216 @@
     <title>Persnal Portfolio</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
 </head>
-<body>
 
-    <div class="nav"><div class="logo"></div> <div class="menu"> <button><a href="#">Home</a></button> <button><a href="#">Skills</a></button> <button><a href="#">Projects</a></button> <button><a href="#">Education</a></button> <button><a href="#">Contact</a></button></div> </div>
-<div class="main"> <div class="photo"><div class="img"></div></div> <div class="writ"><h1>HI, It's <div class="red">Rakshak</div> </h1><h4>I' am a <div class="red">Developer</div></h4> <p>A full-stack developer passionate about building seamless websites and apps, designing, and video editing. With expertise in both frontend and backend, I create functional, user-friendly, and visually appealing digital experiences. Let’s bring ideas to life! 🚀</p>
-    <div class="icon"> <a href="https://www.linkedin.com/in/rakshak-patel-v-12b2b624a/"><i class="fa-brands fa-linkedin-in" style="color: #c21e1e;"></i></a>
-      <a href="https://www.instagram.com/rakshak_2005/"><i class="fa-brands fa-instagram" style="color: #c21e1e;"></i></a>  
-        <i class="fa-brands fa-github" style="color: #c21e1e;"></i>
-        <i class="fa-brands fa-x-twitter" style="color: #c21e1e;"></i>
+<body>
+    <div class="nav">
+        <div class="logo"></div>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="menu" id="mobileMenu">
+            <button><a href="#home">Home</a></button>
+            <button><a href="#main1">Skills</a></button>
+            <button><a href="#projects">Projects</a></button>
+            <button><a href="#">Education</a></button>
+            <button><a href="#contact">Contact</a></button>
+        </div>
     </div>
-    <div class="menu"><button style="position: relative; right: 37vh; margin-top: 3vh; border: 0.5mm solid #C21E1E; border-radius: 10px;"><a href="#">MY BLOG</a></button></div>
-  </div> </div>
-<div class="m">
-  <div class="skills" data-aos="fade-up">
-    <h1>Skills</h1>
-    <div class="rs">   <i class="devicon-html5-plain colored"></i>
-    <i class="devicon-css3-plain colored"></i>
-    <i class="devicon-flutter-plain colored"></i>
-    <i class="devicon-javascript-plain colored"></i>
-  <i class="devicon-python-plain-wordmark colored"></i></div>
-    
- 
-  </div>
+
+    <!-- ABout section -->
+    <div class="main" id="home">
+        <div class="photo">
+            <div class="img"></div>
+        </div>
+        <div class="writ">
+            <h1>HI, It's <div class="red">Rakshak</div></h1>
+            <h4>
+                I' am a <span class="red typewriter" id="typewriter"></span>
+            </h4>
+            <p>
+                A full-stack developer passionate about building seamless websites and apps, designing, and video editing.
+                With expertise in both frontend and backend, I create functional, user-friendly, and visually appealing digital experiences.
+                Let’s bring ideas to life! 🚀
+            </p>
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/rakshak-patel-v-12b2b624a/">
+                    <i class="fa-brands fa-linkedin-in" style="color: #c21e1e;"></i>
+                </a>
+                <a href="https://www.instagram.com/rakshak_2005/">
+                    <i class="fa-brands fa-instagram" style="color: #c21e1e;"></i>
+                </a>
+                <i class="fa-brands fa-github" style="color: #c21e1e;"></i>
+                <i class="fa-brands fa-x-twitter" style="color: #c21e1e;"></i>
+            </div>
+            <div class="menu" id="mobno">
+                <button style="position: relative; right: 37vh; margin-top: 3vh; border: 0.5mm solid #C21E1E; border-radius: 10px;">
+                    <a href="#">MY BLOG</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="main1" id="main1">
+        <h1 data-aos="slide-left">Skills</h1>
+        <div class="skills" data-aos="fade-up">
+            <div class="rs">
+                <i class="devicon-html5-plain colored"></i>
+                <i class="devicon-css3-plain colored"></i>
+                <i class="devicon-flutter-plain colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+                <i class="devicon-python-plain-wordmark colored"></i>
+            </div>
+            <div class="rs1">
+                <i class="devicon-nodejs-plain-wordmark colored"></i>
+                <i class="devicon-express-original colored"></i>
+                <i class="devicon-dart-plain-wordmark colored"></i>
+                <i class="devicon-mysql-plain-wordmark colored"></i>
+                <i class="devicon-react-original colored"></i>
+            </div>
+            <div class="rs2">
+                <i class="devicon-github-original colored"></i>
+                <i class="devicon-vercel-original colored"></i>
+                <i class="devicon-androidstudio-plain colored"></i>
+                <i class="devicon-firebase-plain-wordmark colored"></i>
+                <i class="devicon-tailwindcss-original colored"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="projects" id="projects">
+        <h1 data-aos="slide-left">Projects</h1>
+        <div class="projects-grid" data-aos="fade-up">
+            <div class="project-card">
+                <div class="project-img" style="background-image: url('./ChatGPT\ Image\ Jul\ 24\,\ 2025\,\ 01_05_27\ PM.png'); background-size: cover;"></div>
+                <div class="project-info">
+                    <h2>GEOBUZZ (APP)</h2>
+                    <p>location-based features built using Flutter.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img" style="background-image: url('./WhatsApp Image 2025-07-27 at 23.09.42_ba045719.jpg'); background-size: cover;"></div>
+                <div class="project-info">
+                    <h2>FLASH CHAT (APP)</h2>
+                    <p>Real-time chat application with Firebase backend.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img" style="background-image: url('./WhatsApp Image 2025-07-27 at 23.17.09_8c5aefac.jpg'); background-size: cover;"></div>
+                <div class="project-info">
+                    <h2>I AM RICH (APP)</h2>
+                    <p>Fun app inspired by the classic "I Am Rich" concept.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img" style="background-image: url('./WhatsApp Image 2025-07-27 at 23.21.21_c8b65db9.jpg'); background-size: cover;"></div>
+                <div class="project-info">
+                    <h2>Temperature Converter (Website)</h2>
+                    <p>Convert temperatures between Celsius, Fahrenheit, and Kelvin.</p>
+                    <a href="https://temperatureconverter-xnau.vercel.app" class="project-link" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img" style="background-image: url('./WhatsApp Image 2025-07-27 at 23.31.45_e7786820.jpg'); background-size: cover;"></div>
+                <div class="project-info">
+                    <h2>Weather Forecast</h2>
+                    <p>Get real-time weather updates for any city worldwide.</p>
+                    <a href="https://weather-five-gold.vercel.app" class="project-link" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img" style="background-image: url('./calculator.png'); background-size: cover;"></div>
+                <div class="project-info">
+                    <h2>Calculator (Website)</h2>
+                    <p>Simple and stylish calculator built with HTML, CSS, and JS.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+<div class="contact-section" id="contact">
+    <h2 data-aos="fade-up">Contact Me</h2>
+    <p data-aos="fade-up" data-aos-delay="100">
+        Interested in working together or have any questions? <br>
+        Feel free to reach out!
+    </p>
+    <form class="contact-form" data-aos="fade-up" data-aos-delay="200" autocomplete="off">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-links" data-aos="fade-up" data-aos-delay="300">
+        <a href="mailto:rakshakpatel2005@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/rakshak-patel-v-12b2b624a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/rakshak_2005/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+    </div>
 </div>
 
-<div class="main2"><h2>.....</h2></div>
+        <div class="footer">
+          <h3>COPYRIGHT © Rakshak</h3>
+        </div>
+    <!-- Placeholder Section -->
 
-
-    
-  
-      
-  
-  
-      
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000, // animation duration in ms
-      once: true      // animation only happens once
-    });
-  </script>
-  <script>
-  window.addEventListener('load', function() {
-    setTimeout(function() {
-      document.getElementById('preloader').style.display = 'none';
-    }, 2500); // 5000ms = 5 seconds
-  });
-</script>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // animation duration in ms
+            once: false     // animation happens every time you scroll
+        });
+    </script>
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                const preloader = document.getElementById('preloader');
+                if (preloader) preloader.style.display = 'none';
+            }, 2500); // 2500ms = 2.5 seconds
+        });
+    </script>
+    <script>
+        // Only one typewriter script needed
+        const text = "Developer. ";
+        const speed = 320;
+        let i = 0;
+        function typeWriter() {
+            if (i <= text.length) {
+                document.getElementById("typewriter").textContent = text.substring(0, i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+        window.addEventListener('DOMContentLoaded', typeWriter);
+    </script>
+    <script>
+      // Hamburger menu toggle for mobile
+      const hamburger = document.getElementById('hamburger');
+      const menu = document.getElementById('mobileMenu');
+      hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('open');
+        menu.classList.toggle('open');
+        document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+      });
+      // Close menu when clicking a link
+      document.querySelectorAll('.menu a').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('open');
+          menu.classList.remove('open');
+          document.body.style.overflow = '';
+        });
+      });
+    </script>
 </body>
 </html>

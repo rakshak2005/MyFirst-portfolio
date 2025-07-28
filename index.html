@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
 </head>
 <body>
+
     <div class="nav"><div class="logo"></div> <div class="menu"> <button><a href="#">Home</a></button> <button><a href="#">Skills</a></button> <button><a href="#">Projects</a></button> <button><a href="#">Education</a></button> <button><a href="#">Contact</a></button></div> </div>
 <div class="main"> <div class="photo"><div class="img"></div></div> <div class="writ"><h1>HI, It's <div class="red">Rakshak</div> </h1><h4>I' am a <div class="red">Developer</div></h4> <p>A full-stack developer passionate about building seamless websites and apps, designing, and video editing. With expertise in both frontend and backend, I create functional, user-friendly, and visually appealing digital experiences. Let’s bring ideas to life! 🚀</p>
     <div class="icon"> <a href="https://www.linkedin.com/in/rakshak-patel-v-12b2b624a/"><i class="fa-brands fa-linkedin-in" style="color: #c21e1e;"></i></a>
@@ -16,27 +18,44 @@
         <i class="fa-brands fa-github" style="color: #c21e1e;"></i>
         <i class="fa-brands fa-x-twitter" style="color: #c21e1e;"></i>
     </div>
-  </div>  </div>
-
-  <div class="skills"><div class="smain"><h1>SKILLS</h1> 
-    <div class="ic1"><i class="devicon-html5-plain-wordmark colored"></i>
-    <i class="devicon-css3-plain-wordmark colored"></i>
+    <div class="menu"><button style="position: relative; right: 37vh; margin-top: 3vh; border: 0.5mm solid #C21E1E; border-radius: 10px;"><a href="#">MY BLOG</a></button></div>
+  </div> </div>
+<div class="m">
+  <div class="skills" data-aos="fade-up">
+    <h1>Skills</h1>
+    <div class="rs">   <i class="devicon-html5-plain colored"></i>
+    <i class="devicon-css3-plain colored"></i>
+    <i class="devicon-flutter-plain colored"></i>
     <i class="devicon-javascript-plain colored"></i>
-    <i class="devicon-react-original-wordmark colored"></i>
-</div>
-<div class="ic2">
-    <i class="devicon-nodejs-plain-wordmark colored"></i>
-    <i class="devicon-express-original"></i>
-    <i class="devicon-nodemon-plain colored"></i>
-    <i class="devicon-npm-original-wordmark colored"></i>
+  <i class="devicon-python-plain-wordmark colored"></i></div>
     
-</div>
-<div class="ic3">
-    <i class="devicon-mongodb-plain-wordmark colored"></i>
-    <i class="devicon-mongoose-original"></i>
-    <i class="devicon-mysql-plain-wordmark"></i>
-    <i class="devicon-figma-plain"></i>
-</div>
+ 
   </div>
+</div>
+
+<div class="main2"><h2>.....</h2></div>
+
+
+    
+  
+      
+  
+  
+      
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: true      // animation only happens once
+    });
+  </script>
+  <script>
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      document.getElementById('preloader').style.display = 'none';
+    }, 2500); // 5000ms = 5 seconds
+  });
+</script>
 </body>
 </html>

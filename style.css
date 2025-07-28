@@ -595,6 +595,10 @@ gap: 9vh;
 html {
     scroll-behavior: smooth;
 }
+
+#hamburger {
+    display: none; /* Hide by default, will show on mobile */
+}
 /* --- Responsive .main section --- */
 @media (max-width: 900px) {
 .logo{
@@ -697,6 +701,7 @@ html {
     height: 40vh;
     box-sizing: border-box;
     margin-top: 10vh;
+    text-align: center;
   }
   .rs{
     gap: 2vh;

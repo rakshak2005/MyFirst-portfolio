@@ -855,7 +855,7 @@ strong {
     box-shadow: 0 0 20px 0 rgba(219, 5, 5, 0.18);
   }
   .cvbut{
-    justify-content: center;
+    margin: 1 auto 0 auto;
   }
   .writ {
     margin: 0;

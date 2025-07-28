@@ -254,6 +254,7 @@ html {
   width: 60px;
   height: 60px;
   display: flex;
+  margin-right: 9vh;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
@@ -878,14 +879,14 @@ strong {
     margin-right: 6%;
     margin-top: 2vh;
     text-align: center;
-    line-height: 2;
+    line-height: 1.5;
   }
   .icon {
     width: 100vw;
     max-width: 320px;
     justify-content: center;
     gap: 5vw;
-    margin: 6vh auto 0 auto;
+    margin: 1.5vh auto 0 auto;
   }
   .icon i {
     font-size: 5vh;

@@ -729,7 +729,7 @@ html {
 /* Mobile menu and hamburger styles */
 @media (max-width: 900px) {
     #hamburger {
-        display: block; /* Show hamburger on mobile */
+        display:contents; /* Show hamburger on mobile */
     }
   .hamburger {
     display: flex;

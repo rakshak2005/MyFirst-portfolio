@@ -27,12 +27,25 @@
         </div>
     </div>
 
+    <div id="preloader">
+    <div class="spinner">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
     <!-- ABout section -->
     <div class="main" id="home">
-        <div class="photo">
+        <div class="photo" data-aos="fade-out">
             <div class="img"></div>
         </div>
-        <div class="writ">
+        <div class="writ" data-aos="fade-out">
             <h1>HI, It's <div class="red">Rakshak</div></h1>
             <h4>
                 I' am a <span class="red typewriter" id="typewriter"></span>
@@ -52,17 +65,32 @@
                 <i class="fa-brands fa-github" style="color: #c21e1e;"></i>
                 <i class="fa-brands fa-x-twitter" style="color: #c21e1e;"></i>
             </div>
-            <div class="menu" id="mobno">
-                <button style="position: relative; right: 37vh; margin-top: 3vh; border: 0.5mm solid #C21E1E; border-radius: 10px;">
-                    <a href="#">MY BLOG</a>
-                </button>
+            <div class="cvbut" id="mobno">
+                <button type="button" class="btn">
+  <strong>Resume</strong>
+  <div id="container-stars">
+    <div id="stars"></div>
+  </div>
+
+  <div id="glow">
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+</button>
             </div>
         </div>
     </div>
 
     <!-- Skills Section -->
     <div class="main1" id="main1">
-        <h1 data-aos="slide-left">Skills</h1>
+        <div class="skl"    data-aos="slide-left">
+           
+         <button class="btn1">
+  SKILLS
+</button>
+
+
+        </div>
         <div class="skills" data-aos="fade-up">
             <div class="rs">
                 <i class="devicon-html5-plain colored"></i>
@@ -90,7 +118,9 @@
 
     <!-- Projects Section -->
     <div class="projects" id="projects">
-        <h1 data-aos="slide-left">Projects</h1>
+        <div data-aos="slide-left" class="proj"><button class="btn1">
+  PROjects
+</button></div>
         <div class="projects-grid" data-aos="fade-up">
             <div class="project-card">
                 <div class="project-img" style="background-image: url('./ChatGPT\ Image\ Jul\ 24\,\ 2025\,\ 01_05_27\ PM.png'); background-size: cover;"></div>
@@ -165,9 +195,9 @@
 </div>
 
         <div class="footer">
-          <h3>COPYRIGHT © Rakshak</h3>
+          <h3>COPYRIGHT 2025 © Rakshak</h3>
         </div>
-    <!-- Placeholder Section -->
+
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>

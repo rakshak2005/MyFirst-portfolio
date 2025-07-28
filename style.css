@@ -6,7 +6,7 @@
 body{
     position: relative;
     width: 100%;
-    background-image: url(./coolbackgrounds-particles-stellar.png);
+    background-image: url(./BACKGROUND.png);
     background-size: cover;
     height: 100vh ;
 }
@@ -14,15 +14,13 @@ body{
 /*navigation */
 .nav{
    height: 11vh;
-   /*background-color: red; */
    display: flex;
    justify-content: space-between;
-   background-color: #02020279;
-   
+   background-color: #02020279; 
 }
 
 .logo{
-    background-image: url(./Untitled-1\ copy.png);
+    background-image: url(./LOGO.png);
     background-size: cover;
     height: 13vh;
     width: 14vh;
@@ -84,6 +82,17 @@ body{
 .menu button:hover a {
     color: #c0575a;
 }
+html {
+    scroll-behavior: smooth;
+}
+
+#hamburger {
+    display: none;
+}
+/*navigation ends */
+
+
+/*HOME PAGE */
 .main{
     display: flex;
     justify-content: space-between;
@@ -104,7 +113,7 @@ body{
     height: 69vh;
     width: 49vh;
     border-radius: 800px;
-    background-image: url(./aaa.jpeg);
+    background-image: url(./main.jpeg);
     background-size: cover;
     box-shadow: 0 0 40px 0 rgba(219, 5, 5, 0.274);
     
@@ -159,32 +168,13 @@ body{
     transform: scale(1.2) rotate(-8deg);
     color: #C72E33 !important;
 }
-
-.head1{
-    position: relative;
-    height: 100%;
-    text-align: center;
-    font-size: 12.5vh;
-    text-decoration: 2mm underline #230538 ;
-  color: white;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-style: italic;
-  background: linear-gradient(100deg,#f8032c,#230538);
-  background-clip: text;
-  color: transparent;
-  
-}
-
-.main2 {
-    margin-top: 20vh;
-    justify-items: center;
-}
-
-.item i{
-    font-size: 15vh;
+.cvbut{
+  margin-top: 3vh;
 }
 
 
+
+/*preloader */
 .slider{
     position: relative;
     width: 200vh;
@@ -246,7 +236,6 @@ body{
         left: 100%;
     }
 }
-/* website\style.css */
 #preloader {
   position: fixed;
   top: 0;
@@ -326,6 +315,11 @@ body{
   }
 }
 
+/*preloader end*/
+
+/*skills*/
+
+
 .skills{
     height: 80vh;
     width: 150vh;
@@ -376,6 +370,10 @@ display: flex;
 gap: 9vh;
 }
 
+/*skilss section end--- */
+
+/*proj sec */
+
 .projects {
     margin-top: 20vh;
     display: flex;
@@ -398,7 +396,6 @@ gap: 9vh;
     margin-bottom: 6vh;
 }
 
-/* --- Modern Glassmorphism Project Cards --- */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -449,7 +446,7 @@ gap: 9vh;
 }
 
 .project-info {
-    padding: 80px 2vh 2vh 2vh; /* top padding for image overlap */
+    padding: 80px 2vh 2vh 2vh; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -506,6 +503,13 @@ gap: 9vh;
     font-size: 2vh;
     padding-top: 3vh;
 }
+.proj{
+margin-bottom: 8vh;
+}
+
+/*project section end*/
+
+/*contact section*/
 .contact-section {
     background: rgba(34, 31, 31, 0.85);
     padding: 6vh 0 6vh 0;
@@ -592,13 +596,218 @@ gap: 9vh;
     transform: scale(1.2) rotate(-8deg);
 }
 
-html {
-    scroll-behavior: smooth;
+/* contact section end */
+
+/* Button styles */
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7rem;
+  overflow: hidden;
+  height: 2.5rem;
+  background-size: 300% 300%;
+  cursor: pointer;
+  backdrop-filter: blur(1rem);
+  border-radius: 2rem;
+  transition: 0.5s;
+  animation: gradient_301 5s ease infinite;
+  border: double 2px transparent;
+  background-image: linear-gradient(#212121, #212121),
+    linear-gradient(
+      137.48deg,
+      #f02409 10%,
+      #a11c1c 45%,
+      #8f51ea 67%,
+      #f00505 87%
+    );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 
-#hamburger {
-    display: none; /* Hide by default, will show on mobile */
+#container-stars {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+  backdrop-filter: blur(1rem);
+  border-radius: 5rem;
 }
+
+strong {
+  z-index: 2;
+  font-family: "Avalors Personal Use";
+  font-size: 16px;
+  letter-spacing: 5px;
+  color: #ffffff;
+  text-shadow: 0 0 4px white;
+}
+
+#glow {
+  position: absolute;
+  display: flex;
+  width: 12rem;
+}
+
+.circle {
+  width: 100%;
+  height: 30px;
+  filter: blur(2rem);
+  animation: pulse_3011 4s infinite;
+  z-index: -1;
+}
+
+.circle:nth-of-type(1) {
+  background: rgb(219, 1, 1);
+}
+
+.circle:nth-of-type(2) {
+  background: rgb(0, 0, 0);
+}
+
+.btn:hover #container-stars {
+  z-index: 1;
+  background-color: #212121;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn:active {
+  border: double 4px #fe53bb;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation: none;
+}
+
+.btn:active .circle {
+  background: #fe53bb;
+}
+
+#stars {
+  position: relative;
+  background: transparent;
+  width: 200rem;
+  height: 200rem;
+}
+
+#stars::after {
+  content: "";
+  position: absolute;
+  top: -10rem;
+  left: -100rem;
+  width: 100%;
+  height: 100%;
+  animation: animStarRotate 90s linear infinite;
+}
+
+#stars::after {
+  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+  background-size: 50px 50px;
+}
+
+#stars::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 170%;
+  height: 500%;
+  animation: animStar 60s linear infinite;
+}
+
+#stars::before {
+  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+  background-size: 50px 50px;
+  opacity: 0.5;
+}
+/* From Uiverse.io by ShrinilDhorda */ 
+.btn1 {
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 3rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: linear-gradient(10deg, #e60329 0%, #0b0113 60%);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #c3143191;
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+
+.btn1:active {
+  scale: 0.92;
+}
+
+.btn1:hover {
+  background: rgb(2,29,78);
+  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  color: rgb(4, 4, 38);
+}
+
+
+
+@keyframes animStar {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-135rem);
+  }
+}
+
+@keyframes animStarRotate {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}
+
+@keyframes gradient_301 {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes pulse_3011 {
+  0% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+/*button styles ends here */
+
+
+
 /* --- Responsive .main section --- */
 @media (max-width: 900px) {
 .logo{
@@ -729,7 +938,7 @@ html {
 /* Mobile menu and hamburger styles */
 @media (max-width: 900px) {
     #hamburger {
-        display:flex; /* Show hamburger on mobile */
+        display:flex; 
     }
   .hamburger {
     display: flex;
@@ -808,6 +1017,6 @@ html {
     animation: none !important;
   }
   #mobno{
-    display: none;
+    justify-items: center;
   }
 }

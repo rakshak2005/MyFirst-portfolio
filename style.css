@@ -891,6 +891,11 @@ strong {
   .icon i {
     font-size: 5vh;
   }
+
+  .cvbut{
+    display: flex;
+    justify-content: center;
+  }
   .menu {
     flex-direction: row;
     width: 100vw;

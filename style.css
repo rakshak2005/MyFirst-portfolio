@@ -929,10 +929,12 @@ strong {
   .rs1{
     gap: 2vh;
     font-size: 5vh;
+    justify-content: center;
   }
   .rs2{
     gap: 2vh;
     font-size: 5vh;
+    justify-content: center;
   }
   .menu{
     display: none;

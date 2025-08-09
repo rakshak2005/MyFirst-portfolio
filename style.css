@@ -919,6 +919,7 @@ strong {
     box-sizing: border-box;
     margin-top: 10vh;
     text-align: center;
+    justify-content: center;
   }
   .rs{
     gap: 2vh;

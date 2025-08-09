@@ -919,12 +919,12 @@ strong {
     box-sizing: border-box;
     margin-top: 10vh;
     text-align: center;
-    justify-content: center;
   }
   .rs{
     gap: 2vh;
     font-size: 5vh;
     margin-top: 2vh;
+    justify-content: center;
   }
   .rs1{
     gap: 2vh;
